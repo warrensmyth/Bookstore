@@ -1,11 +1,13 @@
 <%= form_for(cart) do |f| %>
   <% if cart.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(cart.errors.count, "error") %> prohibited this cart from being saved:</h2>
+      <h2><%= raw t('.errors.template.header', count: @order.errors.count,
+        model: t('activerecord.models.order')) %>.</h2>
+      <p><%= t('errors.template.body') %></p>
 
       <ul>
       <% cart.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <li><%=raw message %></li>
       <% end %>
       </ul>
     </div>
@@ -15,3 +17,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+<!-- ... -->      

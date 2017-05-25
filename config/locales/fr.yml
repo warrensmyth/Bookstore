@@ -1,0 +1,23 @@
+fr:
+
+  layouts:
+    application:
+      title:        "Biblioteque de Pragmatique"
+      catalog:      "Catalogue"
+      questions:    "Questions"
+      news:         "Avis"
+      contact:      "Contact"
+
+  number:
+    currency:
+      format:
+        unit:      "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format:    "%n&nbsp;%u"      
+
+  store:
+    index:
+      title_html:  "Votre Catalogue Pragmatique"
+      add_html:    "Ajouter au Panier"    
